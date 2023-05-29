@@ -29,10 +29,9 @@ h2 {
     font-family: "Tactical_Espionage_Action.ttf";
 }
 
-p {
+h3 {
     font-family: "MGS2MENU.TTF";
-    font-size: 26px;
-    
+    font-size: 20px;
 }
 
 canvas {
