@@ -26,7 +26,8 @@ body {
 }
 
 .instructions {
-    font-family: 'MGS2MENU.TTF'
+    font-family: 'MGS2MENU.TTF', 'METAG___.TTF';
+    font-size: 26px;
 }
 
 h2 {
