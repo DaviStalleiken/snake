@@ -11,6 +11,8 @@ let food = {
     x: Math.floor(Math.random() * 15 + 1) * box,
     y: Math.floor(Math.random() * 15 + 1) * box
 }
+let audio = document.getElementById('musicTheme');
+audio.volume = 0.3;
 
 function createBackground() {
     context.fillStyle = "lightgreen";
