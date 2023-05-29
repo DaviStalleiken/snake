@@ -25,6 +25,10 @@ body {
     background-color: #000;
 }
 
+.instructions {
+    font-size: 26px;
+}
+
 h2 {
     font-family: "Tactical_Espionage_Action.ttf";
 }
