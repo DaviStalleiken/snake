@@ -11,7 +11,7 @@ let food = {
     x: Math.floor(Math.random() * 15 + 1) * box,
     y: Math.floor(Math.random() * 15 + 1) * box
 }
-let audio = document.getElementById('musicTheme');
+let audio = document.getElementById('iframeAudio');
 audio.volume = 0.3;
 
 function createBackground() {
@@ -27,7 +27,7 @@ function createSnake() {
 }
 
 function drawFood() {
-    context.fillStyle = "red";
+    context.fillStyle = "darkred";
     context.fillRect(food.x, food.y, box, box);
 }
 

@@ -14,7 +14,7 @@
 }
 
 body {
-    height: 95vh;
+    height: 100vh;
     width: 95;
     display: flex;
     justify-content: center;
@@ -24,14 +24,17 @@ body {
     font-family: "METAG___.TTF";
     background-color: #000;
     background-image: url('https://www.metalgearinformer.com/wp-content/uploads/2016/07/PachiSlot-Metal-Gear-Solid-Snake-Eater-Jungle-1.jpg');
+    opacity: 0.9;
+    overflow: hidden;
 }
 
 section {
     background-color: #000;
     padding: 2rem;
+    padding-bottom: 6.1rem;
 }
 
-.title-box, .subtitle-box {
+.title-box {
     display: flex;
     justify-content: center;
 }
