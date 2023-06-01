@@ -11,19 +11,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <section>
-        <audio preload="auto" id="musicTheme" src="./mgs_battle_theme.mp3" autoplay loop="loop"></audio>
-
-        <iframe src="mgs_battle_theme.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
-
-        <div class="title-box">
-            <h1 class="subtitle">Eater  :  Snake</h1>
-        </div>
-        <h2>Tactical Snake Action</h2>
-        <div class="glow">
-            <canvas id="snake" width="512" height="512"></canvas>
-        </div>  
-        <h3 class="instructions">Press the arrows keys to move, Snake</h3>
-    </section>
+    <main>
+        <section>
+            <iframe src="mgs_battle_theme.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+            
+            <div class="title-box">
+                <h1 class="subtitle">Eater  :  Snake</h1>
+            </div>
+            <h2>Tactical Snake Action</h2>
+            <div>
+                <canvas id="snake" width="512" height="512"></canvas>
+            </div>  
+            <h3 class="instructions">Press the arrows keys to move, Snake</h3>
+        </section>
+    </main>
 </body>
 </html>

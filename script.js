@@ -11,8 +11,9 @@ let food = {
     x: Math.floor(Math.random() * 15 + 1) * box,
     y: Math.floor(Math.random() * 15 + 1) * box
 }
-let audio = document.getElementById('iframeAudio');
+/* let audio = document.getElementById('iframeAudio');
 audio.volume = 0.3;
+let gameOver = document.getElementById('game-over'); */
 
 function createBackground() {
     context.fillStyle = "lightgreen";

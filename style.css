@@ -44,10 +44,17 @@ section {
 .title-box {
     display: flex;
     justify-content: center;
+    margin-top: 6rem;
+}
+
+.subtitle {
+    margin: 0;
+    padding: 0;
 }
 
 .instructions {
     font-family: 'METAG___.TTF';
+    white-space: nowrap;
 }
 
 h2 {
@@ -72,17 +79,14 @@ canvas {
                 1em 1em .8em .4em #000;        
 }
 
- .glow {
-    color: #fff;
-    border-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #0fa,
-    0 0 82px #0fa,
-    0 0 92px #0fa,
-    0 0 102px #0fa,
-    0 0 151px #0fa;
-    
-} 
+@media only screen and (min-width: 860px) {
+    .main {
+        max-width: 1024px;
+        margin: 1rem auto;
+    }
 
+    .main::before,
+    .main::after {
+        width: 70vw;
+    }
+}
