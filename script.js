@@ -11,9 +11,18 @@ let food = {
     x: Math.floor(Math.random() * 15 + 1) * box,
     y: Math.floor(Math.random() * 15 + 1) * box
 }
-/* let audio = document.getElementById('iframeAudio');
-audio.volume = 0.3;
-let gameOver = document.getElementById('game-over'); */
+let audio = document.getElementById('musicTheme');
+audio.volume = 0.4;
+let gameOver = document.getElementById('gameOver');
+
+function snakeIsDead() {
+    gameOver.play();
+}
+
+function playMusicTheme() {
+    audio.play();
+}
+
 
 function createBackground() {
     context.fillStyle = "lightgreen";
@@ -51,6 +60,7 @@ function startGame() {
     for (i = 1; i < snake.length; i++) {
         if (snake[0].x == snake[i].x && snake[0].y == snake[i].y) {
             clearInterval(jogo);
+            snakeIsDead();
             alert('Snake? Snake!? SNAAAAAAAAAAKE!!!');
             window.location.reload(true);;
         }
@@ -59,6 +69,8 @@ function startGame() {
     createBackground();
     createSnake();
     drawFood();
+    playMusicTheme();
+    
 
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
