@@ -57,10 +57,17 @@ section {
     white-space: nowrap;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h2 {
     font-family: "Tactical_Espionage_Action.ttf";
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 
